@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
     <meta name="description" content="Grapgic designing | web development | content writting | tutoring | 20+ projects">
-    <title>designwiz</title>
+    <title>Designwiz</title>
 </head>
 <body>
 
