@@ -33,6 +33,7 @@ body {
     --black2: #0a0a0a;
     --black3: #4d4d4d;
     --border: #1d1d1d;
+	--hero-g: #080808da;
 	
 	--theme-color: #e2a600;
 	--theme-color-hover: #ce9a0d;
@@ -73,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 	font-size: 45px;
 	font-family: pop;
 	text-align: center;
-	color: #efb0021a;
+	color: #efb0022a;
 }
 
 .heading h3,
@@ -365,7 +366,7 @@ main {
 
 .myhero {
 	padding: 140px 0px 140px;
-	background-image: linear-gradient(#0a0a0ada,#0a0a0ab6),url(../image/lines.png);
+	background-image: linear-gradient(var(--hero-g),var(--hero-g)),url(../image/lines.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
@@ -542,7 +543,7 @@ main {
 }
 
 .about .contentBox p {
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: lighter;
 	color: var(--white);
 	margin: 0px;
@@ -1480,7 +1481,7 @@ li.filter-active a span  {
 
 	.myhero {
 		padding-top: 160px;
-		background-image: linear-gradient(#000000da,#000000b6),url(../image/lines2.png);
+		background-image: linear-gradient(var(--hero-g),var(--hero-g)),url(../image/lines2.png);
 		background-size: contain;
 	}
 
@@ -1531,12 +1532,31 @@ li.filter-active a span  {
 
 @media (max-width: 767px)  {
 
+	:root {
+		--red: #a31010;
+		--white: #ececec;
+		--black: #1a1a1a;
+		--black4: #0c0c0c;
+		--black2: #0f0f0f;
+		--black3: #4d4d4d;
+		--border: #292929;
+		--hero-g: #111111da;
+		
+		--theme-color: #e2a600;
+		--theme-color-hover: #ce9a0d;
+		--theme-color-hover2: #ffbb00;
+		--theme-border: #efb0023a;
+	
+		--fade: #00000096;
+		--link: #969696;
+	}
+
 
 	/*========== Hero Section ==========*/
 
 	.myhero {
 		padding-top: 170px;
-		background-image: linear-gradient(#000000da,#000000b6),url(../image/lines3.png);
+		background-image: linear-gradient(var(--hero-g),var(--hero-g)),url(../image/lines3.png);
 		background-size: cover;
 	}
 
@@ -1588,26 +1608,51 @@ li.filter-active a span  {
 	}
 
 	.heading span {
-		font-size: 38px;
+		font-size: 34px;
 	}
 
 	.heading h3 {
-		font-size: 30px;
+		font-size: 26px;
 	}
 
 	.heading2 span {
-		font-size: 24px !important;
+		font-size: 22px !important;
 	}
 	
 	.heading2 h4 {
-		font-size: 22px !important;
+		font-size: 20px !important;
+	}
+
+	 /*========== Mobile Nav ==========*/
+
+	.naveToggle {
+		right: 10px;
+		width: 118px;
+		font-size: 16px;
+	}
+	
+	.naveToggle .bars {
+		width: 44px;
+		height: 44px;
+	}
+	
+	.naveToggle .bar1 {
+		width: 8px;
+	}
+	
+	.naveToggle .bar2 {
+		width: 13px;
+	}
+	
+	.naveToggle .bar3 {
+		width: 18px;
 	}
 
 	/*========== Hero Section ==========*/
 
 	.myhero {
 		padding-top: 170px;
-		background-image: linear-gradient(#000000da,#000000b6),url(../image/lines3.png);
+		background-image: linear-gradient(var(--hero-g),var(--hero-g)),url(../image/lines3.png);
 		background-size: cover;
 	}
 
@@ -1615,6 +1660,31 @@ li.filter-active a span  {
 		width: 100% !important;
 		padding: 50px 0px 0;
 	}
+	
+	.myhero h2 {
+		font-size: 26px;
+	}
+
+	.myhero .subheading {
+		font-size: 14px;
+	}
+	
+	.myhero p {
+		font-size: 16px;
+	}
+	
+	.myhero p .typewriter {
+		font-size: 20px;
+	}
+	
+	.myhero .container .years {
+		font-size: 17px;
+	}
+	
+	.myhero .resumeBtn {
+		margin-top: 25px;
+	}
+	
 
 	/*========== About Section ==========*/
 
@@ -1632,7 +1702,7 @@ li.filter-active a span  {
 	}
 
 	.about .intrestBox span img {
-		height: 40px;
+		height: 37px;
 	}
 
 	.about .contentBox {
@@ -1655,6 +1725,24 @@ li.filter-active a span  {
 
 	.skills .box span img {
 		height: 34px;
+	}
+
+	/*========== Resume Section ==========*/
+
+
+	.resume .resumeBtn a {
+		font-size: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.fiverrBtn {
+		width: 150px;
+		height: 50px;
+	}
+
+	.resume .box .position {
+		font-size: 13px;
 	}
 
 	/*========== Contact Section ==========*/
@@ -1686,7 +1774,8 @@ li.filter-active a span  {
 	/*========== Light-Box ==========*/
 
 
-	.lightBox .body .top .name {
+	.lightBox .bod
+	 .top .name {
 		text-align: start !important;
 		
 	}
