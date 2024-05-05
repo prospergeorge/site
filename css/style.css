@@ -543,7 +543,7 @@ main {
 }
 
 .about .contentBox p {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: lighter;
 	color: var(--white);
 	margin: 0px;
@@ -629,7 +629,7 @@ main {
 }
 
 .services .services-box p {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: lighter;
 	color: var(--white);
 	padding-top: 10px;
@@ -1535,7 +1535,7 @@ li.filter-active a span  {
 	:root {
 		--red: #a31010;
 		--white: #ececec;
-		--black: #1a1a1a;
+		--black: #222222;
 		--black4: #0c0c0c;
 		--black2: #0f0f0f;
 		--black3: #4d4d4d;
@@ -1612,7 +1612,7 @@ li.filter-active a span  {
 	}
 
 	.heading h3 {
-		font-size: 26px;
+		font-size: 29px;
 	}
 
 	.heading2 span {
@@ -1662,7 +1662,12 @@ li.filter-active a span  {
 	}
 	
 	.myhero h2 {
-		font-size: 26px;
+		font-size: 28px;
+	}
+
+	.myhero h2 span{
+		display: block;
+		font-size: 48px;
 	}
 
 	.myhero .subheading {
@@ -1670,11 +1675,11 @@ li.filter-active a span  {
 	}
 	
 	.myhero p {
-		font-size: 16px;
+		font-size: 17px;
 	}
 	
 	.myhero p .typewriter {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	
 	.myhero .container .years {
@@ -1682,7 +1687,7 @@ li.filter-active a span  {
 	}
 	
 	.myhero .resumeBtn {
-		margin-top: 25px;
+		margin-top: 22px !important;
 	}
 	
 
@@ -1701,18 +1706,13 @@ li.filter-active a span  {
 		line-height: 55px;
 	}
 
-	.about .intrestBox span img {
-		height: 37px;
-	}
-
 	.about .contentBox {
-		padding: 30px;
+		padding: 28px;
 	}
 
 	.about .experience .box {
 		width: 100%;
 	}
-
 
 
 	/*========== Skills Section ==========*/
@@ -1732,8 +1732,10 @@ li.filter-active a span  {
 
 	.resume .resumeBtn a {
 		font-size: 15px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 145px;
+		text-align: center;
 	}
 
 	.fiverrBtn {
@@ -1742,7 +1744,7 @@ li.filter-active a span  {
 	}
 
 	.resume .box .position {
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	/*========== Contact Section ==========*/
