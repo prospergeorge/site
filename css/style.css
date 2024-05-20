@@ -38,7 +38,7 @@ body {
 	--theme-color: #e2a600;
 	--theme-color-hover: #ce9a0d;
 	--theme-color-hover2: #ffbb00;
-    --theme-border: #efb0021a;
+    --theme-border: #efb0020c;
 
 	--fade: #00000096;
     --link: #969696;
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 	font-size: 45px;
 	font-family: pop;
 	text-align: center;
-	color: #efb0022a;
+	color: var(--theme-border);
 }
 
 .heading h3,
@@ -1138,6 +1138,19 @@ li.filter-active a span  {
 	width: 60%;
 	max-width: 1600px;
 	margin: 0px auto;
+	overflow: auto;
+}
+
+.caseStudy .contentBox::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.caseStudy .contentBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.caseStudy .contentBox::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
 }
 
 .caseStudy .bars {
@@ -1189,6 +1202,12 @@ li.filter-active a span  {
 .caseStudy .text {
 	color: var(--white);
 	font-size: 16px;
+}
+
+.caseStudy .text b {
+	font-family: pop2;
+	text-transform: uppercase;
+	font-weight: lighter !important;
 }
 
 
@@ -1551,6 +1570,14 @@ li.filter-active a span  {
 		--link: #969696;
 	}
 
+	.heading span,
+	.heading2 span {
+		font-size: 45px;
+		font-family: pop;
+		text-align: center;
+		color: var(--theme-border);
+	}
+
 
 	/*========== Hero Section ==========*/
 
@@ -1563,6 +1590,11 @@ li.filter-active a span  {
 	.myhero .img {
 		width: 500px !important;
 		padding: 70px 0px 0;
+	}
+	
+	.heading span,
+	.heading2 span {
+		color: var(--theme-border);
 	}
 
 	/*========== Hero Section ==========*/
