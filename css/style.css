@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 
 .heading span,
 .heading2 span {
-	font-size: 45px;
+	font-size: 42px;
 	font-family: pop;
 	text-align: center;
 	color: var(--theme-border);
@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
 
 .heading h3,
 .heading2 h4 {
-	font-size: 37px;
+	font-size: 35px;
 	font-family: pop2;
 	color: var(--theme-color);
 	position: absolute;
@@ -88,16 +88,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .heading2 span {
-	font-size: 37px !important;
+	font-size: 35px !important;
 }
 
 .heading2 h4 {
-	font-size: 29px !important;
+	font-size: 27px !important;
 }
 
 .my-btn, .my-btn2 {
-	font-size: 17px;
-	padding: 9px 29px;
+	font-size: 16px;
+	padding: 7px 29px;
 	border-radius: 40px;
 	background-color: var(--theme-color);
 	font-weight: bold;
@@ -105,13 +105,13 @@ body::-webkit-scrollbar-thumb {
 	margin: 0px 8px;
 	border: 1px solid var(--theme-color);
 	text-decoration: none;
+	transition: .5s;
 }
 
 .my-btn:hover {
-	transition: .5s;
 	border: 1px solid var(--theme-color-hover2);
-	background-color: var(--theme-color-hover2);
-	color: var(--black);
+	background-color: transparent;
+	color: var(--theme-color);
 }
 
 .border-bt {
@@ -119,13 +119,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .my-btn2:hover {
-	transition: all .5s;
-	background-color: #362b0ae8;
-	color: var(--theme-color);
+	background-color: var(--theme-color);
+	color: var(--black2);
+}
+
+.my-btn2:hover * {
+	color: var(--black2);
 }
 
 .my-btn2 {
-	background-color: #251e0a;
+	transition: all .5s;
+	background-color: transparent;
 	color: var(--theme-color);
 	font-weight: normal;
 }
@@ -133,6 +137,7 @@ body::-webkit-scrollbar-thumb {
 .my-btn2 * {
 	color: var(--theme-color);
 	font-size: 16px;
+	transition: .5s;
 }
 
 section {
@@ -373,7 +378,7 @@ main {
 }
 
 .myhero h2 {
-	font-size: 35px;
+	font-size: 30px;
 	font-family: pop2;
 	color: var(--white);
 	margin-bottom: 4px;
@@ -385,7 +390,7 @@ main {
 }
 
 .myhero p {
-	font-size: 22px;
+	font-size: 19px;
 	color: var(--white);
 }
 
@@ -438,7 +443,7 @@ main {
 
 
 .myhero .container .years {
-	font-size: 18px;
+	font-size: 17px;
 	color: var(--white);
 }
 
@@ -489,6 +494,10 @@ main {
 	font-size: 32px;
 }
 
+.about b {
+	font-family: pop2;
+}
+
 .about .iLove span {
 	font-size: 40px;
 }
@@ -520,14 +529,14 @@ main {
   	background-clip: text;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-	font-size: 48px;
+	font-size: 45px;
 	font-family: pop2;
 }
 
 .about .experience .box p {
 	color: var(--white);
 	text-align: center;
-	font-size: 22px;
+	font-size: 19px;
 	font-family: pop2;
 	font-weight: lighter;
 	word-spacing: 40px !important;
@@ -621,15 +630,15 @@ main {
 
 
 .services .services-box {
-	box-shadow: 9px 12px 25px 0 rgba(255, 208, 0, 0.137);
+	border: 1px solid var(--theme-border);
 	border-radius: 15px;
 	padding: 45px 20px;
-	border: 1px solid var(--theme-border);
 	background-color: var(--black2);
+	height: 400px;
 }
 
 .services .services-box p {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: lighter;
 	color: var(--white);
 	padding-top: 10px;
@@ -712,6 +721,11 @@ main {
 	transition: .4s;
 	visibility: visible;
 	opacity: 1;
+}
+
+.projects .my-btn:hover {
+	border: 1px solid var(--black2) !important;
+	color: var(--black2) !important;
 }
 
 .invisibleBox {
@@ -875,6 +889,13 @@ li.filter-active a span  {
 	font-size: 16px;
 	padding: 6px 20px;
 	border-radius: 30px;
+	transition: .5s;
+	border: 1px solid var(--black2);
+}
+
+.projects .design .purchase .projectImg:hover {
+	background-color: #0a0a0a00;
+	color: var(--black2);
 }
 
 .coffee .box .purchase .title,
@@ -1000,6 +1021,11 @@ li.filter-active a span  {
 .contactForm .box .input i {
 	
 	color: #4d4d4d;
+}
+
+.contactForm .box .my-btn:hover {
+	border: 1px solid var(--black2);
+	color: var(--black2);
 }
 
 .contactForm .box textarea {
@@ -1694,12 +1720,12 @@ li.filter-active a span  {
 	}
 	
 	.myhero h2 {
-		font-size: 28px;
+		font-size: 23px;
 	}
 
 	.myhero h2 span{
 		display: block;
-		font-size: 48px;
+		font-size: 35px;
 	}
 
 	.myhero .subheading {
