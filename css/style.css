@@ -38,7 +38,7 @@ body {
 	--theme-color: #e2a600;
 	--theme-color-hover: #ce9a0d;
 	--theme-color-hover2: #ffbb00;
-    --theme-border: #efb00207;
+    --theme-border: #efb00210;
 
 	--fade: #00000096;
     --link: #969696;
@@ -1590,7 +1590,7 @@ li.filter-active a span  {
 		--theme-color: #e2a600;
 		--theme-color-hover: #ce9a0d;
 		--theme-color-hover2: #ffbb00;
-		--theme-border: #efb0020c;
+		--theme-border: #efb0021e;
 	
 		--fade: #00000096;
 		--link: #969696;
